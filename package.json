@@ -1,0 +1,28 @@
+{
+  "name": "contact-app-wsb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/stjbch/contact-app-wsb.git",
+  "author": "stejbi <bartosz.stejbach@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/create-config": "^1.1.4",
+    "@eslint/js": "^9.4.0",
+    "@types/node": "^20.14.2",
+    "eslint": "8.x",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.4.0",
+    "nodemon": "^3.1.3",
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
+  },
+  "scripts": {
+    "be-start": "node dist/server/index.js",
+    "be-build": "tsc -p tsconfig.json",
+    "be-dev": "npx nodemon ts-node src/server/index.ts"
+  }
+}
