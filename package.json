@@ -23,12 +23,23 @@
   "scripts": {
     "be-start": "node dist/server/index.js",
     "be-build": "tsc -p tsconfig.json",
-    "be-dev": "npx nodemon ts-node src/server/index.ts"
+    "be-dev": "npx nodemon src/server/index.ts"
   },
   "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.21",
+    "@types/helmet": "^4.0.0",
+    "@types/joi": "^17.2.3",
     "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.1"
+    "helmet": "^7.1.0",
+    "joi": "^17.13.1",
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0",
+    "tslog": "^4.9.3"
   }
 }

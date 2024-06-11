@@ -1,15 +1,14 @@
 import mongoose from 'mongoose';
+import env from './env';
 
 const connectToMongoDB = async () => {
     console.log('Connecting to MongoDB...');
     try {
-        const conn = await mongoose.connect(
-            'mongodb://localhost:27017/contact_app',
-        );
-        console.log(`Connected to MongoDB${conn.connection.host}`);
+        const conn = await mongoose.connect(env.MONGO_URI);
+        console.log(`Connected to MongoDB: ${conn.connection.host}`);
     } catch (error) {
         console.log('Error while connecting to MongoDB: ' + error);
-        throw error;
+        process.exit(1);
     }
 };
 
